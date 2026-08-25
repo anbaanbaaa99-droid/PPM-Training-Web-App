@@ -11,3 +11,4 @@ ppm-training/lib/api.js
 3. Masukkan URL Apps Script API.
 
 4. Deploy ke Vercel/GitHub.
+Deployment test
