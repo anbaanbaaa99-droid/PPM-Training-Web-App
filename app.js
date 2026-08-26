@@ -3,7 +3,7 @@
 // Ganti URL di bawah dengan URL Web App Apps Script Anda.
 // ==========================================================
 
-const API_URL = "AKfycbxbaop9HbasKeMj1d9CqG9jjTqJRq68Gv3f-8zaVobcbv6pDW3LRu4IJpFezpO2nFRi";
+const API_URL = "https://script.google.com/macros/s/AKfycbxbaop9HbasKeMj1d9CqG9jjTqJRq68Gv3f-8zaVobcbv6pDW3LRu4IJpFezpO2nFRi/exec";
 
 const nikInput = document.getElementById("nikInput");
 const nameSelect = document.getElementById("nameSelect");
