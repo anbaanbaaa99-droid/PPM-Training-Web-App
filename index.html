@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learning Journey — AEON Alam Sutera</title>
+  <link rel="icon" href="assets/aeon-logo.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+
+    <header class="topbar">
+      <div class="brand">
+        <img src="assets/aeon-logo.png" alt="AEON" class="logo">
+        <div>
+          <div class="brand-title">LEARNING JOURNEY</div>
+          <div class="brand-subtitle">AEON ALAM SUTERA</div>
+        </div>
+      </div>
+    </header>
+
+    <!-- LOGIN / SEARCH -->
+    <section id="loginView" class="login-view">
+      <div class="hero-card">
+        <div class="eyebrow">PPM TRAINING</div>
+        <h1>Masuk ke Learning Journey</h1>
+        <p class="hero-text">
+          Masukkan NIK Anda atau pilih nama untuk melihat Basic yang wajib
+          dikerjakan beserta modul dan post test.
+        </p>
+
+        <div class="form-group">
+          <label for="nikInput">Input NIK</label>
+          <input
+            id="nikInput"
+            type="text"
+            inputmode="numeric"
+            autocomplete="off"
+            placeholder="Masukkan NIK"
+          >
+        </div>
+
+        <div class="or-divider"><span>atau</span></div>
+
+        <div class="form-group">
+          <label for="nameSelect">Pilih Nama</label>
+          <select id="nameSelect">
+            <option value="">Pilih nama peserta...</option>
+          </select>
+        </div>
+
+        <button id="loginBtn" type="button" class="primary-btn">
+          LOGIN
+        </button>
+
+        <div id="loginStatus" class="status" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- RESULT -->
+    <section id="resultView" class="result-view hidden">
+
+      <div class="profile-strip">
+        <div class="profile-label">PPM</div>
+        <div class="level-label" id="levelLabel">Level</div>
+      </div>
+
+      <div class="profile-card">
+        <div class="profile-main">
+          <h2 id="participantName">Nama Peserta</h2>
+
+          <div class="info-grid">
+            <div class="info-item">
+              <span>Nama</span>
+              <strong id="nameValue"></strong>
+            </div>
+            <div class="info-item">
+              <span>NIK</span>
+              <strong id="nikValue"></strong>
+            </div>
+            <div class="info-item">
+              <span>Section</span>
+              <strong id="sectionValue"></strong>
+            </div>
+          </div>
+        </div>
+
+        <button id="changeParticipantBtn" type="button" class="secondary-btn">
+          GANTI PESERTA
+        </button>
+      </div>
+
+      <div class="required-banner">
+        <div class="required-label">Yang harus dikerjakan:</div>
+        <div class="required-basic" id="basicValue">Basic 3</div>
+      </div>
+
+      <div class="module-card">
+        <div class="module-card-head">
+          <div>
+            <div class="eyebrow">LEARNING MODULE</div>
+            <h3>Modul yang harus dikerjakan</h3>
+          </div>
+          <div class="module-count" id="moduleCount">0 modul</div>
+        </div>
+
+        <div class="module-table-head">
+          <div>Judul</div>
+          <div>Link Post Test</div>
+          <div>Modul</div>
+        </div>
+
+        <div id="moduleList"></div>
+      </div>
+
+    </section>
+
+    <footer>
+      AEON Alam Sutera • Learning Journey • PPM Training
+    </footer>
+
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
